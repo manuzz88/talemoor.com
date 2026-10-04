@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "EB Garamond";
+  src: url("fonts/EBGaramond12-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "EB Garamond SC";
+  src: url("fonts/EBGaramond12-AllSC.woff") format("woff");
+  font-display: swap;
+}
+
+:root {
+  --notte: #0f1b33;
+  --notte-chiara: #16253f;
+  --oro: #e8c480;
+  --crema: #eee8da;
+  --testo: #d9d3c4;
+  --tenue: #9aa3b5;
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--notte); }
+
+body {
+  margin: 0;
+  background: var(--notte);
+  color: var(--testo);
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+  font-size: 1.22rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--oro); text-underline-offset: 3px; }
+a:hover { color: var(--crema); }
+
+.pagina { max-width: 46rem; margin: 0 auto; padding: 0 16px; }
+
+/* home */
+.eroe { text-align: center; padding: 3.5rem 0 1rem; }
+.eroe img {
+  width: min(22rem, 78vw);
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 2.2rem;
+  box-shadow: 0 0 80px rgba(232, 196, 128, 0.12);
+}
+.marchio {
+  font-family: "EB Garamond SC", "EB Garamond", serif;
+  color: var(--oro);
+  font-weight: normal;
+  font-size: clamp(2.6rem, 9vw, 4.2rem);
+  letter-spacing: 0.22em;
+  margin: 0 0 0.3rem 0.22em; /* compensa lo spazio dopo l'ultima lettera */
+  line-height: 1.1;
+}
+.motto {
+  font-family: "EB Garamond SC", "EB Garamond", serif;
+  color: var(--oro);
+  letter-spacing: 0.32em;
+  font-size: 0.95rem;
+  margin: 0 0 0 0.32em;
+}
+.intro { text-align: center; margin: 2.4rem auto 0; max-width: 34rem; color: var(--crema); }
+.bottone {
+  display: inline-block;
+  margin: 2rem 0 0.5rem;
+  padding: 0.7rem 1.6rem;
+  border: 1px solid var(--oro);
+  border-radius: 999px;
+  color: var(--oro);
+  text-decoration: none;
+  font-family: "EB Garamond SC", "EB Garamond", serif;
+  letter-spacing: 0.14em;
+  font-size: 1.05rem;
+}
+.bottone:hover { background: var(--oro); color: var(--notte); }
+
+.riquadro {
+  margin: 3.5rem 0 0;
+  padding: 1.4rem 1.6rem;
+  background: var(--notte-chiara);
+  border-radius: 14px;
+  font-size: 1.08rem;
+}
+.riquadro h2 { margin-top: 0; }
+
+h2 {
+  font-family: "EB Garamond SC", "EB Garamond", serif;
+  font-weight: normal;
+  color: var(--oro);
+  letter-spacing: 0.08em;
+  font-size: 1.35rem;
+  margin: 2.2rem 0 0.4rem;
+}
+
+/* pagine di testo */
+.testo { padding-top: 2.5rem; padding-bottom: 1rem; }
+.testo h1 {
+  font-family: "EB Garamond SC", "EB Garamond", serif;
+  font-weight: normal;
+  color: var(--oro);
+  letter-spacing: 0.1em;
+  font-size: clamp(1.9rem, 6vw, 2.5rem);
+  margin: 0.4rem 0 0.2rem;
+}
+.testo .data { color: var(--tenue); margin-top: 0; }
+.ritorno {
+  font-family: "EB Garamond SC", "EB Garamond", serif;
+  letter-spacing: 0.22em;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid rgba(232, 196, 128, 0.18);
+  text-align: center;
+  color: var(--tenue);
+  font-size: 0.98rem;
+}
+footer a { margin: 0 0.5rem; }
